@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Student Scheduler</string>
+    <string name="term_edit_start">Start Date (MM/DD/YYYY)</string>
+    <string name="term_edit_end">End Date (MM/DD/YYY)</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.studentscheduler">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/student_scheduler_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/student_scheduler_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentScheduler"
+        tools:targetApi="31">
+        <activity
+            android:name=".UI.NoteEdit"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Edit Note" />
+        <activity
+            android:name=".UI.NoteAdd"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Add Note" />
+        <activity
+            android:name=".UI.NoteList"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Notes" />
+        <activity
+            android:name=".UI.InstructorAdd"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Add Instructor" />
+        <activity
+            android:name=".UI.AssessmentAdd"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Add Assessment" />
+        <activity
+            android:name=".UI.CourseAdd"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Add Course" />
+        <activity
+            android:name=".UI.TermAdd"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Add Term" />
+        <activity
+            android:name=".UI.AssessmentEdit"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Edit Assessment" />
+        <activity
+            android:name=".UI.CourseEdit"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Edit Course" />
+        <activity
+            android:name=".UI.InstructorEdit"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Edit Instructor" />
+        <activity
+            android:name=".UI.TermEdit"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Edit Term" />
+        <activity
+            android:name=".UI.InstructorList"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Instructors" />
+        <activity
+            android:name=".UI.AssessmentList"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Assessment" />
+        <activity
+            android:name=".UI.CourseList"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Courses" />
+        <activity
+            android:name=".UI.TermList"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="Term" />
+        <activity
+            android:name=".UI.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".UI.ReminderBroadcast" />
+    </application>
+
+</manifest>
